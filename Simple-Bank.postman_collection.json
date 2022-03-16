@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "5d7e1e7c-6682-4902-8b5e-45f3228d5545",
+		"name": "Simple-Bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "GetAccounts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostAccounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"owner\": \"Edson Ricardo Anthony Vieira\",\r\n    \"balance\": 0,\r\n    \"currency\": \"BRL\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutAccounts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAccounts",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByIdAccounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/accounts/20990648140492800",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts",
+								"20990648140492800"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entries",
+			"item": [
+				{
+					"name": "GetEntries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entries/20990648140492800",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entries",
+								"20990648140492800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostEntries",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transfers",
+			"item": [
+				{
+					"name": "GetTransfers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/transfers/20990648140492800",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transfers",
+								"20990648140492800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostTransfers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fromAccount\": 20990648140492800,\r\n    \"toAccount\": \r\n    \"amount\": 999\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/transfers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transfers",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
